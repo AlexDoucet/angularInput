@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularQuest';
+
+  onomatopiaList : string[] = [];
+  // public onomatopiaList:Array<string>=[];
+
+  onReceiveNewOnomatopia($event: string) : void {
+this.onomatopiaList.push($event);
+  }
+
 }

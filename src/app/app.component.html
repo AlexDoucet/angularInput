@@ -1,1 +1,7 @@
-<app-developer></app-developer>
+<app-create-onomatopia (sendOnomatopiaToParent) = "onReceiveNewOnomatopia($event)"></app-create-onomatopia>
+
+<ul *ngFor="let onomatopia of onomatopiaList">
+
+  <li>{{onomatopia}} </li>
+
+  </ul>
