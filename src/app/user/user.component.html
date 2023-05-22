@@ -1,0 +1,46 @@
+<div class="form">
+  <label>
+    Username :
+    <input type="text" [formControl]="username"> <!--pour lier l'input au formControl déclaré en TS -->
+
+  </label>
+  <label>
+    Email :
+    <input type="email" [formControl]="email">
+
+  </label>
+  <label>
+    Password :
+    <input type="password" [formControl]="password">
+
+  </label>
+  <div class="address">
+  <label>
+    Street :
+    <input type="text" [formControl]="street">
+
+  </label>
+  <label>
+    Zipcode :
+    <input type="text" [formControl]="zipcode">
+
+  </label>
+  <label>
+    City :
+    <input type="text" [formControl]="city">
+
+  </label>
+
+  <button type="button" (click)="createUser()">Create User</button>
+</div>
+
+
+<p> username : {{user.username}}</p>
+<p> email : {{user.email}}</p>
+<p> password : {{user.password}}</p>
+<p> street : {{user.address.street}}</p>
+<p> zipcode : {{user.address.zipcode}}</p>
+<p> city : {{user.address.city}}</p>
+
+
+</div>

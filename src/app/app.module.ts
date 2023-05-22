@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { ModelsComponent } from './models/models.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia
     ModelsComponent,
     DeveloperComponent,
     SkillComponent,
-    CreateOnomatopiaComponent
+    CreateOnomatopiaComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
